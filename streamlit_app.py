@@ -8,7 +8,7 @@ with st.expander('Data'):
   st.write('Raw Data')
   df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv')
   df
-with st.expander('Clean Data')
+with st.expander('Clean Data'):
   st.write('clean data')
   df.dropna(subset=['sex'],inplace=True)
   df
