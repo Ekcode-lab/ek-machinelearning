@@ -48,7 +48,7 @@ with st.expander('input features'):
   
  # encode x
 encode = ['island','sex']
-df_penguins = pd.get_dummies("input_penguins,prefix=encode")
+df_penguins = pd.get_dummies("input_penguins, prefix=encode")
 input_row = df_penguins[:1]
 # encode y
 target_mapper = {'Adelie':0,
@@ -59,7 +59,7 @@ def target_encode(val):
 y = y_raw.apply(target_encode)
 
 with st.expander('Data preparation'):
-  st.write('**Encoded input penguins(X)**')
+  st.write('**Encoded X (input penguins)**')
   input_row
   st.write('**Encoded y**')
   y
