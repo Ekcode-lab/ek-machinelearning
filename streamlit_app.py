@@ -7,8 +7,7 @@ st.write('This app is meant to predict weather conditions in your area')
 
 df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv')
 df
-df.drop(['3', '339'], axis=1, inplace=True)
-df
+
 
 
 
