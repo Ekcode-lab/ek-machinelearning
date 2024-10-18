@@ -3,7 +3,7 @@
 Breast_cancer screening
 ```
 
-This is a machine learning app
+ThIs is a machine learning app
 
 ## Demo App
 
