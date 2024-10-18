@@ -7,6 +7,8 @@ st.write('This app is meant to predict weather conditions in your area')
 
 df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv')
 df
+df.dropna(subset=['sex'],inplace=True)
+df
 
 
 
