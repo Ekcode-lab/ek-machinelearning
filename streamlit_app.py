@@ -37,9 +37,9 @@ data = {'island': island,
         'flipper_length_mm': flipper_length_mm,
         'body_mass_g': body_mass_g,
         'sex': sex}
-input_df = pd.DataFrame(data, index=[0])
-input_penguins = pd.concat([input_df, X_raw],axis=0)
-# encode x
+  input_df = pd.DataFrame(data, index=[0])
+  input_penguins = pd.concat([input_df, X_raw],axis=0)
+ # encode x
 encode = ['island','sex']
 df_penguins = pd.get dummies("input_penguins,prefix=encode")
 input_row = df_penguins[:1]
@@ -51,6 +51,7 @@ def target_encode(val)
   return target_mapper[val]
 y = y_raw.apply(target_encode)
 y
+y_raw
 
 with st.expander('input features'):
   st.write('**input penguins**')
