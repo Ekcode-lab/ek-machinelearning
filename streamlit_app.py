@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 st.title('🤖 PENGUIN SUITABLE ISLAND')
 
-st.write('This app is meant to predict the suitable island for differnt penguins based on their gender, size and weight.')
+st.write('This app is meant to predict the suitable island for different penguins based on their gender, size and weight.')
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv')
