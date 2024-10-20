@@ -71,6 +71,7 @@ rf.fit(X, y)
 
 prediction = rf.predict(input_row)
 pred_proba = rf.pred_proba(input_row)
+
 pred_proba
 
 df.pred_prob = pd.DataFrame(pred_prob)
