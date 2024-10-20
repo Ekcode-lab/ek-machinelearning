@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('🤖 WEATHER PREDICTION APP')
+st.title('🤖 PENGUIN SUITABLE ISLAND PREDICT')
 
 st.write('This app is meant to predict weather conditions in your area')
 with st.expander('Data'):
