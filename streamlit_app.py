@@ -74,12 +74,12 @@ pred_proba = rf.predict_proba(input_row)
 
 pred_proba
 
-#df.pred_prob = pd.DataFrame(pred_prob)
-#df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
-#df.pred_prob.rename({0:'Adelie',
-                # 1:'Chinstrap',
-                 #2:'Gentoo'})
-#df.pred_prob
+df.pred_prob = pd.DataFrame(pred_prob)
+df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
+df.pred_prob.rename({0:'Adelie',
+                     1:'Chinstrap',
+                     2:'Gentoo'})
+df.pred_prob
 
 
 
