@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 st.title('🤖 WEATHER PREDICTION APP')
 
@@ -63,6 +64,19 @@ with st.expander('Data preparation'):
   input_row
   st.write('**Encoded y**')
   y
+
+rf = RandomForestClassifier()
+rf.fit(X, y)
+
+prediction = rf.predict(input_row)
+pred_prob = rf.pred_prob(input_row)
+
+df.pred_prob = pd.DataFrame(pred_prob)
+df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
+df.pred_prob.rename({0:'Adelie',
+                 1:'Chinstrap',
+                 2:'Gentoo'})
+df.pred_prob
 
 
 
