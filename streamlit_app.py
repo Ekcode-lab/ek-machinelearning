@@ -70,7 +70,8 @@ rf = RandomForestClassifier()
 rf.fit(X, y)
 
 prediction = rf.predict(input_row)
-prediction_proba = rf.predition_proba(input_row)
+pred_proba = rf.pred_proba(input_row)
+pred_proba
 
 df.pred_prob = pd.DataFrame(pred_prob)
 df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
