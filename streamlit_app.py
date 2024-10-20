@@ -69,17 +69,14 @@ with st.expander('Data preparation'):
 rf = RandomForestClassifier()
 rf.fit(X, y)
 
-prediction = rf.predict(input_row)
-pred_proba = rf.pred_proba(input_row)
+#prediction = rf.
 
-pred_proba
-
-df.pred_prob = pd.DataFrame(pred_prob)
-df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
-df.pred_prob.rename({0:'Adelie',
-                 1:'Chinstrap',
-                 2:'Gentoo'})
-df.pred_prob
+#df.pred_prob = pd.DataFrame(pred_prob)
+#df.pred_prob.columns = ['Adelie', 'Chinstrap', 'Gentoo']
+#df.pred_prob.rename({0:'Adelie',
+                # 1:'Chinstrap',
+                 #2:'Gentoo'})
+#df.pred_prob
 
 
 
